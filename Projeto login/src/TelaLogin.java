@@ -132,10 +132,11 @@ public class TelaLogin extends JFrame {
 
                 dispose();
 
-                abrirTelaPrincipal();
+                abrirTelaPrincipal(email);
 
 
-  } else {
+
+            } else {
 
 
 
@@ -203,20 +204,10 @@ public class TelaLogin extends JFrame {
 
 
 
-    private void abrirTelaPrincipal() {
-
-
-
-        JFrame telaPrincipal = new JFrame("Bem-vindo");
-        telaPrincipal.setSize(400, 200);
-        telaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        telaPrincipal.setLocationRelativeTo(null);
-        telaPrincipal.add(new JLabel("Bem-vindo ao sistema!", SwingConstants.CENTER), BorderLayout.CENTER);
-        telaPrincipal.setVisible(true);
-
-
-
+    private void abrirTelaPrincipal(String emailUsuario) {
+        new TelaPrincipal(emailUsuario);
     }
+
 
 
 
@@ -228,35 +219,38 @@ public class TelaLogin extends JFrame {
 
 
     private void carregarUsuarios() {
+        File pastaUsuarios = new File("usuarios");
+
+   if (pastaUsuarios.exists() && pastaUsuarios.isDirectory()) {
+   for (File pasta : pastaUsuarios.listFiles()) {
+    if (pasta.isDirectory()) {
+     File cadastro = new File(pasta, "cadastro.txt");
 
 
 
-    try (BufferedReader reader = new BufferedReader(new FileReader("cadastros.txt"))) {
-            String linha;
-            while ((linha = reader.readLine()) != null) {
+      if (cadastro.exists()) {
+   try (BufferedReader reader = new BufferedReader(new FileReader(cadastro))) {
+        String linha = reader.readLine(); // primeira linha com os dados
+         if (linha != null) {
+          String[] dados = linha.split(";");
+         if (dados.length >= 2) {
+        String email = dados[0];
+         String senha = dados[1];
+      usuarios.put(email, senha);
+     }
+      }
 
 
-                String[] dados = linha.split(";");
-
-                if (dados.length >= 2) {
-
-
-                    String email = dados[0];
-                    String senha = dados[1];
-                    usuarios.put(email, senha);
-
-                }
-            }
+  } catch (IOException e) {
+       System.out.println("Erro ao ler dados de: " + pasta.getName());
 
 
-        } catch (IOException e) {
-
-
-            JOptionPane.showMessageDialog(null, "Erro ao carregar dados de usuários.", "Erro", JOptionPane.ERROR_MESSAGE);
-
-
-        }
+  }
     }
+ }
+  }
+   }
+   }
 
 
     public static void main(String[] args) {
