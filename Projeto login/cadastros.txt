@@ -27,3 +27,6 @@ yuri@gmail.com;1234;yuri;(24) 35252-6262;152.426.252-52;15/06/2025
 roberta@gmail.com;1234;roberta;(24) 25252-5222;372.526.262-62;15/06/2025
 lourivan@gmail.com;1234;Lourivan;(15) 25262-6262;253.635.522-22;15/06/2024
 Mariajuliagomesdavid@gmail.com;1234;Maria Julia David Gomes;(16) 98183-4010;378.435.158-10;15/06/2004
+Andrezacarolinadavid@gmail.com;123;Andreza Carolina;(13) 25256-2624;253.624.262-53;15/06/2025
+maicon@gmail.com;123;Maicon;(14) 26252-6226;625.262.252-52;15/06/1999
+Lorenzodavid@gmail.com;123;Lorenzo;(52) 62426-2526;145.131.514-11;15/06/2025
