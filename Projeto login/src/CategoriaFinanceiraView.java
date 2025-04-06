@@ -3,21 +3,34 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.event.TableModelEvent;
 import java.awt.*;
 
+
+
+
 public class CategoriaFinanceiraView extends JFrame {
 private JTextField txtNome;
  private JButton btnAdicionar, btnExcluir;
  private JTable table;
    private DefaultTableModel model;
 
+
+
+
  public CategoriaFinanceiraView() {
 
 
 
   UIManager.put("Label.font", new Font("Arial", Font.PLAIN, 14));
+
   UIManager.put("Button.font", new Font("Arial", Font.BOLD, 14));
 
+
   UIManager.put("TextField.font", new Font("Arial", Font.PLAIN, 14));
+
+
   UIManager.put("Table.font", new Font("Arial", Font.PLAIN, 14));
+
+
+
   UIManager.put("TableHeader.font", new Font("Arial", Font.BOLD, 14));
 
 
@@ -25,25 +38,40 @@ private JTextField txtNome;
 
 
   setTitle("Categorias Financeiras");
+
    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
     setSize(650, 300);
+
     setLocationRelativeTo(null);
-    setLayout(new BorderLayout());
+
+ setLayout(new BorderLayout());
 
 
-  JPanel panelTop = new JPanel();
+
+JPanel panelTop = new JPanel();
+
   panelTop.setLayout(new BoxLayout(panelTop, BoxLayout.Y_AXIS));
 
+
   JLabel titulo = new JLabel("Gerenciar Categoria");
+
    titulo.setFont(new Font("Arial", Font.BOLD, 16));
+
    titulo.setAlignmentX (Component.CENTER_ALIGNMENT);
+
    titulo.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
-   panelTop.add(titulo);
+
+
+  panelTop.add(titulo);
 
 
 
-   JPanel linhaFormulario = new JPanel();
+JPanel linhaFormulario = new JPanel();
+
     linhaFormulario.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 5));
+
 
     txtNome = new JTextField(20);
     btnAdicionar = new JButton("Adicionar");

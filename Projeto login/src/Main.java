@@ -1,14 +1,14 @@
 
 
 public class Main {
- public static void main(String[] args) {
 
-  // Criando a primeira tela
+ public static void main(String[] args) {
 
 
      new telaInicial();
 
 
-    }
+
+  }
 }
 

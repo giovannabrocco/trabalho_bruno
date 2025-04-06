@@ -28,18 +28,22 @@ public class TelaLogin extends JFrame {
 
 
 
-    private HashMap<String, String> usuarios = new HashMap<>();
+  private HashMap<String, String> usuarios = new HashMap<>();
 
 
 
  public TelaLogin() {
 
 
-   setTitle("Login e Cadastro");
+
+ setTitle("Login e Cadastro");
+
 
         setSize(800, 600);
 
         //  mesmo tamanho da tela inicial
+
+
 
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -219,6 +223,8 @@ public class TelaLogin extends JFrame {
 
 
     private void carregarUsuarios() {
+
+
         File pastaUsuarios = new File("usuarios");
 
    if (pastaUsuarios.exists() && pastaUsuarios.isDirectory()) {
@@ -243,6 +249,8 @@ public class TelaLogin extends JFrame {
 
   } catch (IOException e) {
        System.out.println("Erro ao ler dados de: " + pasta.getName());
+
+
 
 
   }

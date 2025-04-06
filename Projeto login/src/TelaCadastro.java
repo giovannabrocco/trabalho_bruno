@@ -218,15 +218,25 @@ configurarBotao(botaoCadastrar);
 
 
     botaoCadastrar.addActionListener(e -> cadastrarUsuario());
-        botaoLogin.addActionListener(e ->
+
+
+     botaoLogin.addActionListener(e ->
+
         {
+
 
 
             new TelaLogin();
             dispose();
+
+
         });
 
+
+
  setVisible(true);
+
+
     }
 
 
@@ -372,8 +382,12 @@ configurarBotao(botaoCadastrar);
 
 
     private boolean usuarioJaExiste(String email) {
+
      String pastaUsuario = "usuarios/" + email.replace("@", "_at_").replace(".", "_");
+
       File pasta = new File(pastaUsuario);
+
+
   return pasta.exists();        // se o usuario ja for cadastrado
     }
 
@@ -388,10 +402,19 @@ configurarBotao(botaoCadastrar);
 
 
    try (BufferedWriter writer = new BufferedWriter(new FileWriter("cadastros.txt", true))) {
-    writer.write(dados);
+
+
+  writer.write(dados);
+
     writer.newLine();
+
     } catch (IOException e) {
+
+
   JOptionPane.showMessageDialog(null, "Erro ao salvar o cadastro geral.", "Erro", JOptionPane.ERROR_MESSAGE);
+
+
+
         }
 
 
@@ -404,20 +427,42 @@ configurarBotao(botaoCadastrar);
 
 
 private void criarPastaDoUsuario(String email, String conteudoCadastro) {
+
+
     String pastaUsuario = "usuarios/" + email.replace("@", "_at_").replace(".", "_");
     File pasta = new File(pastaUsuario);
 
+
+
     if (!pasta.exists()) {
+
+
     if (pasta.mkdirs()) {
-      try (BufferedWriter writer = new BufferedWriter(new FileWriter(pastaUsuario + "/cadastro.txt"))) {
-      writer.write(conteudoCadastro);
+
+
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter(pastaUsuario + "/cadastro.txt"))) {
+
+     writer.write(conteudoCadastro);
+
       writer.newLine();
+
+
        } catch (IOException e) {
+
+
        JOptionPane.showMessageDialog(null, "Erro ao salvar dados do usuário.", "Erro", JOptionPane.ERROR_MESSAGE);
-   }
+ }
+
+
   } else {
+
   JOptionPane.showMessageDialog(null, "Erro ao criar pasta do usuário.", "Erro", JOptionPane.ERROR_MESSAGE);
-        }
+
+
+    }
+
+
+
 } else {
   JOptionPane.showMessageDialog(null, "Usuário já cadastrado!", "Aviso", JOptionPane.WARNING_MESSAGE);
     }
