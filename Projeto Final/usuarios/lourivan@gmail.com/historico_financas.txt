@@ -1,0 +1,2 @@
+100.0;Alimentação;casa;14/06/1997
+900.0;Alimentação;casa;15/06/2023

@@ -1,0 +1,11 @@
+receita,Alimentação,casa,1000.0,15/06/2025
+receita,Transporte,50,1000.0,15/06/2004
+receita,Transporte,casa,100.0,15/06/2025
+despesa,Transporte,1000,10000.0,15/06/2025
+receita,Outros,salario,7900.0,15/06/2025
+despesa,Transporte,carro,1000.0,15/06/2025
+receita,Outros,ccc,50000.0,15/06/2025
+receita,roupa,oii,1000.0,15/06/2025
+receita,salario,Casa,150.0,15/06/2025
+despesa,Pessoal,Roupa Nova,160.0,25/06/2025
+despesa,Pessoal,Tenis ,1000.0,30/01/2025
