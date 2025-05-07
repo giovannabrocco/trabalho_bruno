@@ -1,7 +1,0 @@
-despesa,almoço,50.0,01/01/2025
-despesa,roupa,55.0,01/01/2025
-despesa,ju,90.0,01/01/2025
-despesa,carro,1000.0,02/04/2025
-despesa,roupa linda,50.0,03/04/2025
-despesa,casa reformada,1000.0,02/03/2025
-despesa,disney,5000.0,10/06/2025
