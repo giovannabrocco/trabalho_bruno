@@ -17,19 +17,15 @@
     public String getTipo() {
         return tipo;
     }
-
-   public String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
-
     public String getDescricao() {
         return descricao;
     }
-
     public double getValor() {
         return valor;
     }
-
     public String getData() {
         return data;
     }

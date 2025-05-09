@@ -203,7 +203,7 @@ import javax.swing.text.*;
         private boolean usuarioJaExiste(String email) {
             String pastaUsuario = "usuarios/" + email.replace("@", "_at_").replace(".", "_");
             File pasta = new File(pastaUsuario);
-            return pasta.exists();        // se o usuario ja for cadastrado
+            return pasta.exists();   // se o usuario ja for cadastrado
         }
 
         private void salvarCadastro(String email, String senha, String nome, String telefone, String cpf, String dataNascimento) {
