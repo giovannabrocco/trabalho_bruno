@@ -1,4 +1,0 @@
-receita,Jogo,Jogo,50.0,15/06/2025
-despesa,Jogo,Jogo,200.0,25/06/2025
-receita,Jogo,jogo,1000.0,15/06/2025
-despesa,Jogo,jogo,1000.0,15/06/2025

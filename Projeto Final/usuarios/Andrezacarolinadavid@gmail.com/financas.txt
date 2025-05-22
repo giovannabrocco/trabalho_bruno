@@ -1,2 +1,0 @@
-despesa,+Editar Categorias,Vania,200.0,15/06/2025
-receita,Casa,Vanis,200.0,15/06/2025

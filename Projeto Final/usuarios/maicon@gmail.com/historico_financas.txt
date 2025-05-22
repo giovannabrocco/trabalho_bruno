@@ -1,4 +1,0 @@
-700.0;Outros;Ar;05/04/2025
-50.0;Alimentação;sorvete;05/04/2025
-200.0;Transporte;carro;05/04/2025
-60.0;Lazer;futebol;05/04/2025
