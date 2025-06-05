@@ -1,0 +1,16 @@
+R$ 10,00;Alimentação;casa;04/04/2025
+1000.0;Alimentação;;__/__/____
+10.0;Alimentação;casa;15/08/2004
+20.0;Alimentação;hotel;16/09/2000
+200.0;Alimentação;comida;15/06/2004
+10.0;Alimentação;casa;15/06/2004
+200.0;Alimentação;x;15/06/2004
+10.0;Alimentação;casa cozinha;15/06/2004
+10.0;Alimentação;casa x;15/06/2004
+-10.0;Alimentação;xxx;15/06/2004
+-10.0;Lazer;futebol;15/06/2004
+200.0;Alimentação;xxxx;15/06/2004
+1000.0;Alimentação;xxx;15/06/2004
+-200.0;Alimentação;xx;19/08/2004
+250.0;Alimentação;casa;15/06/2002
+200.0;Alimentação;cada;15/06/2025
